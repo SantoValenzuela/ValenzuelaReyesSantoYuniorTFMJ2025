@@ -171,7 +171,7 @@ function initializeDocuments() {
         documentsGrid.innerHTML = documents.map(doc => createDocumentCard(doc)).join('');
         
         // Iniciar la actualización automática cada 2 segundos
-        setInterval(updateAllDocuments, 2000);
+        setInterval(updateAllDocuments, 10000);
         
         // Agregar efecto de hover personalizado
         const documentCards = document.querySelectorAll('.document-card');
