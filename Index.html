@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio – Santo Yunior Valenzuela Reyes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SY</span>
+                <span class="logo-name">Santo Yunior</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#documents" class="nav-link">Documentos</a></li>
+                <li><a href="#class" class="nav-link">La Clase</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Santo Yunior</span>
+                    <span class="hero-subtitle">Valenzuela Reyes</span>
+                </h1>
+                <p class="hero-description">
+                    Estudiante de Ingeniería en Sistemas especializado en 
+                    <span class="highlight">Arquitectura del Computador</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#documents" class="btn btn-primary">
+                        <i class="fas fa-file-pdf"></i>
+                        Ver Documentos
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-user"></i>
+                        Conocer más
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="yo.jpg" alt="Santo Yunior Valenzuela Reyes" class="profile-image">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre mí</h2>
+                <p class="section-subtitle">Conoce mi pasión por la tecnología y el aprendizaje</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formación Académica</h3>
+                        <p>Estudiante de Ingeniería en Sistemas con especialización en Arquitectura del Computador. Apasionado por entender cómo funcionan los sistemas desde sus fundamentos más básicos.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Habilidades Técnicas</h3>
+                        <p>Dominio en programación, análisis de sistemas, y comprensión profunda de la arquitectura de computadoras. Experiencia en desarrollo web y documentación técnica.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Intereses Personales</h3>
+                        <p>Además de la programación, disfruto del debate intelectual y la música. Creo en el poder de la tecnología para resolver problemas complejos.</p>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h3>Competencias Desarrolladas</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <span>Arquitectura del Computador</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-memory"></i>
+                            </div>
+                            <span>Sistemas de Memoria</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <span>Redes y Comunicaciones</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <span>Sistemas Operativos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="documents">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mis Documentos</h2>
+                <p class="section-subtitle">Trabajos realizados durante el curso de Arquitectura del Computador</p>
+            </div>
+            <div class="documents-grid" id="documentsGrid">
+                <!-- Los documentos se generarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Section -->
+    <section id="class" class="class-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Arquitectura del Computador</h2>
+                <p class="section-subtitle">Conocimientos adquiridos y experiencia de aprendizaje</p>
+            </div>
+            <div class="class-content">
+                <div class="class-overview">
+                    <div class="overview-card">
+                        <div class="card-header">
+                            <i class="fas fa-book-open"></i>
+                            <h3>Contenido del Curso</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Durante este curso profundizamos en los fundamentos de la arquitectura de computadoras, desde los componentes básicos hasta sistemas complejos. Exploramos procesadores, memoria, sistemas de E/S y arquitecturas modernas.</p>
+                            <ul class="topic-list">
+                                <li><i class="fas fa-check"></i>Fundamentos de arquitectura de computadoras</li>
+                                <li><i class="fas fa-check"></i>Diseño de procesadores y unidades de control</li>
+                                <li><i class="fas fa-check"></i>Jerarquía de memoria y cache</li>
+                                <li><i class="fas fa-check"></i>Sistemas de entrada y salida</li>
+                                <li><i class="fas fa-check"></i>Arquitecturas paralelas y distribución</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Herramientas y Metodologías</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Utilizamos herramientas modernas para el análisis y diseño de sistemas, incluyendo simuladores, herramientas de desarrollo y metodologías de documentación técnica.</p>
+                            <div class="tools-grid">
+                                <div class="tool-item">
+                                    <i class="fas fa-desktop"></i>
+                                    <span>Simuladores de Hardware</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>Control de Versiones</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fas fa-file-code"></i>
+                                    <span>Documentación Técnica</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Análisis de Rendimiento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning-outcomes">
+                    <h3>Resultados de Aprendizaje</h3>
+                    <div class="outcomes-grid">
+                        <div class="outcome-card">
+                            <div class="outcome-number">01</div>
+                            <h4>Comprensión Profunda</h4>
+                            <p>Desarrollé una comprensión sólida de cómo los componentes de hardware interactúan para formar sistemas computacionales funcionales.</p>
+                        </div>
+                        <div class="outcome-card">
+                            <div class="outcome-number">02</div>
+                            <h4>Análisis Crítico</h4>
+                            <p>Capacidad para analizar y evaluar diferentes arquitecturas, identificando ventajas y limitaciones de cada diseño.</p>
+                        </div>
+                        <div class="outcome-card">
+                            <div class="outcome-number">03</div>
+                            <h4>Aplicación Práctica</h4>
+                            <p>Habilidad para aplicar conocimientos teóricos en problemas reales de diseño y optimización de sistemas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">¿Tienes alguna pregunta? ¡Hablemos!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>santo.valenzuela@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>GitHub</h4>
+                            <p>github.com/santoyunior</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/santoyunior</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Santo Yunior Valenzuela Reyes. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Inicio</a>
+                    <a href="#about">Sobre mí</a>
+                    <a href="#documents">Documentos</a>
+                    <a href="#class">La Clase</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
