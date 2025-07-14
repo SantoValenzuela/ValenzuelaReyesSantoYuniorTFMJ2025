@@ -1,54 +1,87 @@
 // Configuración de documentos PDF
 const documents = [
-    {
-        id: "doc1",
-        title: "Fundamentos de Arquitectura",
-        description: "Conceptos básicos sobre diseño de procesadores y componentes fundamentales.",
-        src: "docs/fundamentos-arquitectura.pdf",
-        pages: 15,
-        date: "2024-09-15"
-    },
-    {
-        id: "doc2",
-        title: "Sistemas de Memoria",
-        description: "Análisis de jerarquías de memoria, cache y gestión de memoria virtual.",
-        src: "docs/sistemas-memoria.pdf",
-        pages: 22,
-        date: "2024-10-08"
-    },
-    {
-        id: "doc3",
-        title: "Entrada y Salida",
-        description: "Estudio de sistemas de E/S, interrupciones y controladores de dispositivos.",
-        src: "docs/entrada-salida.pdf",
-        pages: 18,
-        date: "2024-10-25"
-    },
-    {
-        id: "doc4",
-        title: "Paralelismo y Concurrencia",
-        description: "Arquitecturas paralelas, multiprocesamiento y programación concurrente.",
-        src: "docs/paralelismo-concurrencia.pdf",
-        pages: 25,
-        date: "2024-11-12"
-    },
-    {
-        id: "doc5",
-        title: "Optimización de Rendimiento",
-        description: "Técnicas de optimización, benchmarking y análisis de rendimiento.",
-        src: "docs/optimizacion-rendimiento.pdf",
-        pages: 20,
-        date: "2024-11-28"
-    },
-    {
-        id: "doc6",
-        title: "Proyecto Final",
-        description: "Diseño e implementación de un sistema completo integrando todos los conceptos.",
-        src: "docs/proyecto-final.pdf",
-        pages: 35,
-        date: "2024-12-15"
-    }
+  {
+    id: "arbol-dir",
+    title: "Árbol de Directorios y Archivos",
+    description: "Creación de árbol de directorios en Windows y comandos asociados.",
+    src: "docs/SantoValenzuelaACArbolDiryarS7.pdf",
+    pages: 10,          // ← pon el total real
+    date: "2025-06-05"
+  },
+  {
+    id: "control-lectura-ia",
+    title: "Control de Lectura – IA (S5)",
+    description: "Reflexión sobre Inteligencia Artificial e implicaciones éticas.",
+    src: "docs/SantoValenzuelaACCoLeIAS5.pdf",
+    pages: 8,
+    date: "2025-06-10"
+  },
+  {
+    id: "alu",
+    title: "Función del ALU (S6)",
+    description: "Operaciones aritmético‑lógicas, suma, resta, multiplicación y división.",
+    src: "docs/SantoValenzuelaACFuALUS6.pdf",
+    pages: 6,
+    date: "2025-06-12"
+  },
+  {
+    id: "iot-ia",
+    title: "IoT y la IA (S3)",
+    description: "Industria 4.0, fábricas inteligentes y desafíos éticos.",
+    src: "docs/SantoValenzuelaACIAS3.pdf",
+    pages: 7,
+    date: "2025-05-28"
+  },
+  {
+    id: "investigacion-entorno",
+    title: "Investigación según Entorno / Necesidad",
+    description: "Comparativa de procesadores, placas y PCs de alto rendimiento.",
+    src: "docs/SantoValenzuelaACInSeEnNeS4.pdf",
+    pages: 14,
+    date: "2025-06-18"
+  },
+  {
+    id: "memoria",
+    title: "Jerarquía de Memoria (S5)",
+    description: "Registros, caché, RAM y almacenamiento: niveles y tiempos de acceso.",
+    src: "docs/SantoValenzuelaACMemoriaS5.pdf",
+    pages: 12,
+    date: "2025-06-20"
+  },
+  {
+    id: "power-supply",
+    title: "Power Supply (S6)",
+    description: "Voltajes ATX, medición y tolerancias de una fuente de poder.",
+    src: "docs/SantoValenzuelaACPoSupplyS6.pdf",
+    pages: 9,
+    date: "2025-06-22"
+  },
+  {
+    id: "prueba-comandos",
+    title: "Prueba de Comandos DOS (S8)",
+    description: "Listado, explicación y evidencias de comandos CMD útiles.",
+    src: "docs/SantoValenzuelaACPrComandosS8.pdf",
+    pages: 11,
+    date: "2025-07-01"
+  },
+  {
+    id: "tarea-comandos",
+    title: "Tarea – Comandos Windows (S7)",
+    description: "Fecha de instalación, uptime, MAC y variables de entorno.",
+    src: "docs/SantoValenzuelaACTaComandoS7.pdf",
+    pages: 6,
+    date: "2025-06-28"
+  },
+  {
+    id: "video",
+    title: "Proyecto de Video (S7)",
+    description: "Enlace y explicación del video final de la asignatura.",
+    src: "docs/SantoValenzuelaACVídeosS7.pdf",
+    pages: 2,
+    date: "2025-07-05"
+  }
 ];
+
 
 // Variables globales
 let currentPages = {};
