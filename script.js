@@ -251,28 +251,36 @@ function initializeParallaxEffects() {
 }
 
 // Función para efectos de typing en el título
+// Efecto de máquina de escribir corregido
 function initializeTypingEffect() {
-    const heroTitle = document.querySelector('.hero-title');
-    const titleText = heroTitle.innerHTML;
-    
-    // Solo ejecutar si no se ha ejecutado antes
-    if (!heroTitle.classList.contains('typed')) {
-        heroTitle.innerHTML = '';
-        heroTitle.classList.add('typed');
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < titleText.length) {
-                heroTitle.innerHTML += titleText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        };
-        
-        // Iniciar después de un pequeño delay
-        setTimeout(typeWriter, 1000);
-    }
+    const gradientSpan = document.querySelector('.gradient-text');
+    const subtitleSpan = document.querySelector('.hero-subtitle');
+
+    if (!gradientSpan || !subtitleSpan || gradientSpan.classList.contains('typed')) return;
+
+    // Texto original
+    const nameText = gradientSpan.textContent.trim();
+    const lastNameText = subtitleSpan.textContent.trim();
+
+    // Limpiar los spans
+    gradientSpan.textContent = '';
+    subtitleSpan.textContent = '';
+    gradientSpan.classList.add('typed');
+
+    // Helpers
+    const type = (el, text, i = 0, delay = 70, cb) => {
+        if (i < text.length) {
+            el.textContent += text.charAt(i);
+            setTimeout(() => type(el, text, i + 1, delay, cb), delay);
+        } else if (cb) {
+            setTimeout(cb, 400); // pequeña pausa entre líneas
+        }
+    };
+
+    // Lanzar animación: primero nombre, luego apellido
+    type(gradientSpan, nameText, 0, 60, () => type(subtitleSpan, lastNameText, 0, 60));
 }
+
 
 // Función para efectos de contador en números
 function initializeCounterEffects() {
